@@ -1,0 +1,116 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1553333885675" stop="1553333885754">
+  <name>test.run</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1553333885675" status="passed" stop="1553333885679">
+      <name>TestCalculate.test_add[\u6d4b\u8bd5\u4e24\u6570\u76f8\u52a0-10-20-30]</name>
+      <attachments/>
+      <labels>
+        <label name="feature" value="test_calculate_number"/>
+        <label name="testId" value="http://www.jira.com"/>
+        <label name="severity" value="blocker"/>
+        <label name="story" value="test_add"/>
+        <label name="issue" value="http://www.baidu.com"/>
+        <label name="thread" value="22704-MainThread"/>
+        <label name="host" value="BZD22831"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1553333885678" status="passed" stop="1553333885678">
+          <name>calculate</name>
+          <title>calculate</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1553333885680" status="passed" stop="1553333885682">
+      <name>TestCalculate.test_add[\u6d4b\u8bd5\u4e24\u6570\u76f8\u52a0-10.0-20-x type is not int]</name>
+      <attachments/>
+      <labels>
+        <label name="feature" value="test_calculate_number"/>
+        <label name="testId" value="http://www.jira.com"/>
+        <label name="severity" value="blocker"/>
+        <label name="story" value="test_add"/>
+        <label name="issue" value="http://www.baidu.com"/>
+        <label name="thread" value="22704-MainThread"/>
+        <label name="host" value="BZD22831"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1553333885683" status="failed" stop="1553333885744">
+      <name>TestCalculate.test_sub[\u6d4b\u8bd5\u4e24\u6570\u76f8\u51cf\u7684\u7edd\u5bf9\u503c-10-20-15]</name>
+      <failure>
+        <message>AssertionError: assert 10 == 15</message>
+        <stack-trace>E   assert 10 == 15</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="feature" value="test_calculate_number"/>
+        <label name="testId" value="http://www.jira.com"/>
+        <label name="severity" value="blocker"/>
+        <label name="story" value="test_sub"/>
+        <label name="issue" value="http://www.baidu.com"/>
+        <label name="thread" value="22704-MainThread"/>
+        <label name="host" value="BZD22831"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1553333885745" status="passed" stop="1553333885748">
+      <name>TestCalculate.test_sub[\u6d4b\u8bd5\u4e24\u6570\u76f8\u51cf\u7684\u7edd\u5bf9\u503c-10-2-y type is not int]</name>
+      <attachments/>
+      <labels>
+        <label name="feature" value="test_calculate_number"/>
+        <label name="testId" value="http://www.jira.com"/>
+        <label name="severity" value="blocker"/>
+        <label name="story" value="test_sub"/>
+        <label name="issue" value="http://www.baidu.com"/>
+        <label name="thread" value="22704-MainThread"/>
+        <label name="host" value="BZD22831"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1553333885749" status="failed" stop="1553333885754">
+      <name>TestReplace.test_replace[\u6d4b\u8bd5\u66ff\u6362\u6389\u5b57\u7b26\u4e32\u4e2d\u7684\u67d0\u4e9b\u5b57\u7b26---hell -world++-pattern0-t-tthellotttworldtt]</name>
+      <failure>
+        <message>AssertionError: assert '--hellt-worldtt' == 'tthellotttworldtt'
+  - --hellt-worldtt
+  ? ^^     ^
+  + tthellotttworldtt
+  ? ^^    + ^^</message>
+        <stack-trace>E   AssertionError: assert '--hellt-worldtt' == 'tthellotttworldtt'
+      - --hellt-worldtt
+      ? ^^     ^
+      + tthellotttworldtt
+      ? ^^    + ^^</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="feature" value="test_replace_string"/>
+        <label name="testId" value="http://www.jira.com"/>
+        <label name="severity" value="blocker"/>
+        <label name="story" value="test_replace_all"/>
+        <label name="issue" value="http://www.baidu.com"/>
+        <label name="thread" value="22704-MainThread"/>
+        <label name="host" value="BZD22831"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1553333885749" status="passed" stop="1553333885749">
+          <name>replace string</name>
+          <title>replace string</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
