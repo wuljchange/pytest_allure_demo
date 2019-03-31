@@ -33,3 +33,19 @@ class TestReplace:
     def test_replace(self, replace, cid, raw, pattern, new, excepted):
         real = replace.replace_all(self, raw, pattern, new)
         assert real == excepted
+
+
+# 测试xls文件的case
+@pytest.mark.xls
+class TestXls:
+    @allure.feature('test_xls_case')
+    @allure.story('test_xls_add')
+    def test_add(self, calculate, data):
+        real = calculate.add(data['num1'], data['num2'])
+        assert real == data['expected']
+
+    @allure.feature('test_xls_case')
+    @allure.story('test_xls_sub')
+    def test_sub(self, calculate, data):
+        real = calculate.sub(data['num1'], data['num2'])
+        assert real == data['expected']

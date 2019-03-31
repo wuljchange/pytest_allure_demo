@@ -1,6 +1,14 @@
 from utils.tools import TestNumberDemo, TestStringDemo
+from utils.xls import gen_xls_data
 import pytest
 import allure
+
+
+def pytest_generate_tests(metafunc):
+    if 'data' in metafunc.fixturenames:
+        argnames = 'data'
+        argvalues = gen_xls_data(metafunc.cls.__name__, metafunc.function.__name__)
+        metafunc.parametrize(argnames, argvalues, scope="function")
 
 
 @allure.step('calculate')
