@@ -7,7 +7,7 @@ class TestNumberDemo:
         pass
 
     @staticmethod
-    def add(self, x: int, y: int):
+    def add(x: int, y: int):
         """
         测试两整数相加
         :return: 两数之和
@@ -19,7 +19,7 @@ class TestNumberDemo:
         return x+y
 
     @staticmethod
-    def sub(self, x: int, y: int):
+    def sub(x: int, y: int):
         """
         测试两整数相减
         :return: 差值的绝对值
@@ -36,7 +36,7 @@ class TestStringDemo:
         pass
 
     @staticmethod
-    def replace_all(self, raw: str, pattern: list, new: str):
+    def replace_all(raw: str, pattern: list, new: str):
         """
         将文本字符串中的某些字符替换为目标字符
         :return:
